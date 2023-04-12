@@ -2,18 +2,13 @@ export default {
     name:"my-imagenes",
     template:/*html*/`
     <div class="left">
-		<img src="img/arrow.png">
+		<img :src="configuracion.imagenes[0]">
 	</div>
-
 	<div class="right">
-		<img src="img/arrow.png">
+		<img :src="configuracion.imagenes[0]">
 	</div>`,
-    data(){
-        return{
-
-        }
-    },
+    
     props:{
-        
+        configuracion:Object
     }
 }
